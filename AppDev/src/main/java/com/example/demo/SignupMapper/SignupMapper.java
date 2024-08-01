@@ -7,7 +7,7 @@ import com.example.demo.SignupEntity.SignupEntity;
 public class SignupMapper {
 
     // convert department jpa entity into department dto
-    public static SignupDto mapToDepartmentDto(SignupEntity signup){
+    public static SignupDto mapToSignupDto(SignupEntity signup){
         return new SignupDto(
                 signup.getId(),
                 signup.getName(),
@@ -17,7 +17,7 @@ public class SignupMapper {
     }
 
     // convert department dto into department jpa entity
-    public static SignupEntity mapToDepartment(SignupDto signupDto){
+    public static SignupEntity mapToSignup(SignupDto signupDto){
         return new SignupEntity(
         		signupDto.getId(),
         		signupDto.getName(),
